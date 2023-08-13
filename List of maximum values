@@ -1,0 +1,19 @@
+def convert(arr):
+    new_list=[]
+    for i in arr:
+        new_list.append(int(i))
+    return new_list
+
+
+n=int(input())
+all_lists=[]
+all_max=[]
+for i in range(n):
+    all_lists.append(int(n))
+for i in range(n):
+    all_lists[i]=input().split()
+    all_lists[i]=convert(all_lists[i])
+    c=max(all_lists[i])
+    all_max.append(int(c))
+print(all_max)
+    
